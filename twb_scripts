@@ -1,0 +1,2 @@
+alias twb_remove_spaces='for f in *\ *; do mv "$f" "${f// /_}"; done'
+alias twb_re-encode_mp3s='for file in *.mp3; do mv $file orig_${file}; lame -b 56 orig_${file} $file; done'
